@@ -59,11 +59,13 @@ export class TasksController {
     name: 'categoryId',
     description: 'Filter tasks by category ID',
     example: 2,
+    required: false,
   })
   @ApiQuery({
     name: 'dueDate',
     description: 'Filter tasks by due date (ISO 8601 format)',
     example: '2025-09-29T13:30:00Z',
+    required: false,
   })
   findAll(
     @Query('categoryId', new ParseIntPipe({ optional: true }))
