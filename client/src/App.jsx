@@ -3,8 +3,6 @@ import Sidebar from "./components/Sidebar.jsx";
 
 //PAGES
 import Tasks from "./pages/Tasks.jsx";
-import Today from "./pages/Today.jsx";
-import Calendar from "./pages/Calendar.jsx";
 import ByCategory from "./pages/ByCategory.jsx";
 
 const App = () => {
@@ -17,7 +15,6 @@ const App = () => {
             <Route path="/">
               <Route index element={<Tasks />} />
             </Route>
-            <Route path="/calendar" element={<Calendar />} />
             <Route path="/category/:categoryId" element={<ByCategory />} />
           </Routes>
         </div>
